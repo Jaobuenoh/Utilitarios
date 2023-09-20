@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chamar Função de Clique com onclick</title>
+    <style>
+        #meuBotao {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Adicione o atributo onclick ao botão -->
+    <button id="meuBotao" onclick="mudarCor()">Clique para Mudar a Cor</button>
+
+    <script>
+        function mudarCor() {
+            var botao = document.getElementById('meuBotao');
+            botao.style.backgroundColor = '#e74c3c'; // Mudar a cor quando clicado
+        }
+    </script>
+</body>
+</html>

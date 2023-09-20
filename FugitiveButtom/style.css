@@ -1,0 +1,34 @@
+.answers {
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+
+
+}
+
+#yesButton {
+
+    background-color: pink;
+    color: purple;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+    
+
+}
+
+#noButton {
+
+    background-color: purple;
+    color: pink;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
