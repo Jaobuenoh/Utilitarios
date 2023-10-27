@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_registro.css">
+    <title>Registro</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="sub-container">
+
+
+            <form class="form-post-container" method="POST" action="/additens" th:object="${itemEstoque}">
+
+                <h2 class="titulo">Adicionar Item do Estoque</h2>
+                <div class="register-container">
+                    <div>
+                        <label></label>
+                        <input type="hidden" th:value="${itemEstoque.id_item_estoque}" name="id_item_estoque" />
+                    </div>
+                    <div>
+                        <label for="lote item"></label>
+                        <input type="text" id="nome" name="lote_item_estoque"
+                            th:value="${itemEstoque.lote_item_estoque}" placeholder=" lote do Item">
+                    </div>
+                    <div>
+                        <label for="descricao"></label>
+                        <input type="text" id="descricao" name="quantidade_item_estoque"
+                            th:value="${itemEstoque.quantidade_item_estoque}" placeholder=" quantidade do Item">
+                    </div>
+                    <div>
+                        <label for="preco"></label>
+                        <input type="text" id="preco" name="data_entrada_item_estoque"
+                            th:value="${itemEstoque.data_entrada_item_estoque}" placeholder=" data do Item">
+                    </div>
+                    <div>
+                        <label for="quantidade"></label>
+                        <input type="text" id="quantidade" name="validade_item_estoque"
+                            th:value="${itemEstoque.validade_item_estoque}" placeholder=" validade do Item">
+                    </div>
+
+                    <button type="submit" class="button-cadastrar">Cadastrar</button>
+                </div>
+            </form>
+
+
+            <div class="button-container">
+
+                <form method="GET" action="/home">
+                    <button>Voltar para a Home</button>
+                </form>
+
+                <form method="GET" action="/list">
+                    <button>Listar</button>
+                </form>
+
+            </div>
+
+
+        </div>
+ 
+        
+        <footer class="footer-container">
+            <div> Farofa </div>
+        </footer>
+
+    </div>
+    
+</body>
+
+</html>
