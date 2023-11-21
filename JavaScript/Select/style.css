@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    background-color: black;
+    color: white;
+}
+
+.select {
+    padding:  6rem;
+}
+
+#category-select label {
+    font-size: 0.75rem;
+    letter-spacing: 0.0225rem;
+}
+
+#select-button {
+    margin-top: .5rem;
+    display: flex;
+    padding: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: .375rem;
+    border: 1px solid #252529;
+    background-color: #17171A;
+}
